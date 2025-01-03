@@ -2,7 +2,7 @@ name: Deloy Hexo to GitHub Pages
  
 on: 
   push:
-    -main   #当推送到main分支时触发
+    - main   #当推送到main分支时触发
 
 jobs:
   build:
