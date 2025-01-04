@@ -11,14 +11,14 @@ jobs:
 
     steps:
       - name: Checkout repository
-       uses: actions/checkout@v3
+        uses: actions/checkout@v3
         with:
-          submodules: false # 禁用子模块检查
+          submodules: false  # 禁用子模块检查
 
-     - name: Setup Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22' # 使用 Node.js 22
+          node-version: '22'  # 使用 Node.js 22
 
       - name: Install Dependencies
         run: npm install
@@ -32,6 +32,7 @@ jobs:
         run: |
           hexo clean
           hexo generate
+
       - name: Configure Git
         run: |
           git config --global user.name 'github-actions[bot]'
