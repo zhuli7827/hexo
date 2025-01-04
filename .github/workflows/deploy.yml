@@ -1,35 +1,49 @@
-name: Deploy Hexo Blog
+name: Deploy Hexo to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # 触发工作流的分支
+      - main  # 当推送到 main 分支时触发
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout repository
+       uses: actions/checkout@v3
+        with:
+          submodules: false # 禁用子模块检查
 
-      - name: Set up Node.js
+     - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 22  # 根据你的需求设置 Node.js 版本
+          node-version: '22' # 使用 Node.js 22
 
-      - name: Install dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Install Hexo Git Deployer
         run: |
-          npm install
-          npm install hexo-theme-particles hexo-renderer-inferno  # 安装主题和依赖
+          npm install hexo-deployer-git --save
+          npm install hexo-cli -g
 
-      - name: Generate static files
+      - name: Clean and Generate Static Files
         run: |
           hexo clean
           hexo generate
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          cd public/
+          git init
+          git add -A
+          git commit -m "Deploy by GitHub Actions"
+          git remote add origin https://${{ secrets.GH_TOKEN }}@github.com/zhuli7827/hexo.git
+          git push origin HEAD:gh-pages -f
