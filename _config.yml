@@ -1,5 +1,5 @@
 title: 信息技术与应用协会
-subtitle: 'Hello World'
+subtitle: Hello World
 description: ' 探索软件开发之道，享受生活点滴 '
 keywords: null
 author: ZhuLi
@@ -64,4 +64,3 @@ deploy:
   type: git
   repo: https://github.com/zhuli7827/hexo.git
   branch: gh-pages
-
