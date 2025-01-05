@@ -973,3 +973,103 @@ ol li {
         padding-left: 20px;
     }
 }
+
+/* 文章区域通用样式 */
+.posts-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f0f8ff; /* 浅蓝色背景 */
+    border-radius: 12px; /* 圆角 */
+    border: 1px solid #b3e5fc; /* 浅蓝色边框 */
+    box-shadow: 0 4px 6px rgba(3, 169, 244, 0.1); /* 浅蓝色阴影 */
+    transition: all 0.3s ease; /* 悬停动画 */
+}
+
+.posts-section:hover {
+    box-shadow: 0 6px 12px rgba(3, 169, 244, 0.15); /* 悬停时阴影加深 */
+    transform: translateY(-2px); /* 悬停时轻微上移 */
+}
+
+/* 区域标题样式 */
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #03a9f4; /* 天蓝色标题 */
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #81d4fa; /* 浅蓝色下划线 */
+}
+
+/* 置顶文章样式 */
+.pinned-posts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pinned-post-item {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #e1f5fe; /* 浅蓝色背景 */
+    border-radius: 6px;
+    border-left: 4px solid #03a9f4; /* 天蓝色左侧高亮边框 */
+}
+
+.pinned-post-item a {
+    color: #03a9f4; /* 天蓝色链接 */
+    text-decoration: none;
+}
+
+.pinned-post-item a:hover {
+    text-decoration: underline;
+}
+
+/* 精选文章样式 */
+.featured-posts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.featured-post-item {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #e1f5fe; /* 浅蓝色背景 */
+    border-radius: 6px;
+    border-left: 4px solid #4fc3f7; /* 浅蓝色左侧高亮边框 */
+}
+
+.featured-post-item a {
+    color: #03a9f4; /* 天蓝色链接 */
+    text-decoration: none;
+}
+
+.featured-post-item a:hover {
+    text-decoration: underline;
+}
+
+/* 文章列表样式 */
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-item {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #e1f5fe; /* 浅蓝色背景 */
+    border-radius: 6px;
+    border-left: 4px solid #81d4fa; /* 更浅的蓝色左侧高亮边框 */
+}
+
+.post-item a {
+    color: #03a9f4; /* 天蓝色链接 */
+    text-decoration: none;
+}
+
+.post-item a:hover {
+    text-decoration: underline;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: #4fc3f7; /* 浅蓝色日期 */
+    margin-left: 1rem;
+}
