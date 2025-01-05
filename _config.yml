@@ -20,6 +20,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: ':lang'
 skip_render: null
+
 new_post_name: ':title.md'
 default_layout: post
 titlecase: false
@@ -34,12 +35,14 @@ relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
+  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -47,6 +50,8 @@ index_generator:
   path: ''
   per_page: 10
   order_by: '-date'
+# Category & Tag
+# 这里配置分类和标签
 default_category: uncategorized
 category_map: null
 tag_map: null
@@ -63,4 +68,4 @@ theme: shoka
 deploy:
   type: git
   repo: https://github.com/zhuli7827/hexo.git
-  branch: gh-pages
+  branch: main
