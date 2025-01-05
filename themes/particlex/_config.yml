@@ -6,7 +6,7 @@ avatar: /images/bj.jpg
 
 # Home page background image
 background:
-    - /images/keji.webp
+    - /images/background1.jpg
 
 # Loading image
 loading: /images/loading.gif
