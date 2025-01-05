@@ -24,8 +24,23 @@
     <%- theme.card.enable || 'class="home-posts-wrap-no-card"' %>
 >
     <div id="home-posts">
-        <%- partial("posts") %>
-        <%- partial("current") %>
+        <!-- 置顶区域 -->
+        <div id="pinned-posts" class="posts-section">
+            <h2 class="section-title">置顶文章</h2>
+            <%- partial("_partial/pinned-posts") %>
+        </div>
+
+        <!-- 精选区域 -->
+        <div id="featured-posts" class="posts-section">
+            <h2 class="section-title">精选文章</h2>
+            <%- partial("_partial/featured-posts") %>
+        </div>
+
+        <!-- 列表区域 -->
+        <div id="post-list" class="posts-section">
+            <h2 class="section-title">文章列表</h2>
+            <%- partial("_partial/post-list") %>
+        </div>
     </div>
     <% if (theme.card.enable) { %>
     <div id="home-card">

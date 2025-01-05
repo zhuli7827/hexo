@@ -973,3 +973,49 @@ ol li {
         padding-left: 20px;
     }
 }
+/* 文章区域通用样式 */
+.posts-section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* 置顶文章样式 */
+.pinned-posts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pinned-post-item {
+    margin-bottom: 0.5rem;
+}
+
+/* 精选文章样式 */
+.featured-posts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.featured-post-item {
+    margin-bottom: 0.5rem;
+}
+
+/* 文章列表样式 */
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-item {
+    margin-bottom: 1rem;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-left: 1rem;
+}

@@ -1,0 +1,12 @@
+<% if (site.posts.length > 0) { %>
+    <ul class="post-list">
+        <% site.posts.forEach(post => { %>
+            <li class="post-item">
+                <a href="<%= url_for(post.path) %>"><%= post.title %></a>
+                <span class="post-date"><%= post.date %></span>
+            </li>
+        <% }) %>
+    </ul>
+<% } else { %>
+    <p>暂无文章。</p>
+<% } %>

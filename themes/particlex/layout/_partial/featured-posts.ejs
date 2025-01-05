@@ -1,0 +1,11 @@
+<% if (site.posts.filter(post => post.featured).length > 0) { %>
+    <ul class="featured-posts-list">
+        <% site.posts.filter(post => post.featured).forEach(post => { %>
+            <li class="featured-post-item">
+                <a href="<%= url_for(post.path) %>"><%= post.title %></a>
+            </li>
+        <% }) %>
+    </ul>
+<% } else { %>
+    <p>暂无精选文章。</p>
+<% } %> 
