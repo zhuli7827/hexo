@@ -977,15 +977,15 @@ ol li {
 .posts-section {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background-color: #fff8f0; /* 浅米黄色背景 */
+    background-color: #f0f8ff; /* 浅蓝色背景 */
     border-radius: 12px; /* 圆角 */
-    border: 1px solid #ffe0b2; /* 浅橙色边框 */
-    box-shadow: 0 4px 6px rgba(255, 152, 0, 0.1); /* 浅橙色阴影 */
+    border: 1px solid #b3e5fc; /* 浅蓝色边框 */
+    box-shadow: 0 4px 6px rgba(3, 169, 244, 0.1); /* 浅蓝色阴影 */
     transition: all 0.3s ease; /* 悬停动画 */
 }
 
 .posts-section:hover {
-    box-shadow: 0 6px 12px rgba(255, 152, 0, 0.15); /* 悬停时阴影加深 */
+    box-shadow: 0 6px 12px rgba(3, 169, 244, 0.15); /* 悬停时阴影加深 */
     transform: translateY(-2px); /* 悬停时轻微上移 */
 }
 
@@ -993,9 +993,9 @@ ol li {
 .section-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #ff6f00; /* 暖橙色标题 */
+    color: #03a9f4; /* 天蓝色标题 */
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #ffb74d; /* 浅橙色下划线 */
+    border-bottom: 2px solid #81d4fa; /* 浅蓝色下划线 */
 }
 
 /* 置顶文章样式 */
@@ -1007,13 +1007,13 @@ ol li {
 .pinned-post-item {
     margin-bottom: 0.5rem;
     padding: 0.5rem;
-    background-color: #fff3e0; /* 浅橙色背景 */
+    background-color: #e1f5fe; /* 浅蓝色背景 */
     border-radius: 6px;
-    border-left: 4px solid #ff9800; /* 暖橙色左侧高亮边框 */
+    border-left: 4px solid #03a9f4; /* 天蓝色左侧高亮边框 */
 }
 
 .pinned-post-item a {
-    color: #ff6f00; /* 暖橙色链接 */
+    color: #03a9f4; /* 天蓝色链接 */
     text-decoration: none;
 }
 
@@ -1030,13 +1030,13 @@ ol li {
 .featured-post-item {
     margin-bottom: 0.5rem;
     padding: 0.5rem;
-    background-color: #fff3e0; /* 浅橙色背景 */
+    background-color: #e1f5fe; /* 浅蓝色背景 */
     border-radius: 6px;
-    border-left: 4px solid #ffb74d; /* 浅橙色左侧高亮边框 */
+    border-left: 4px solid #4fc3f7; /* 浅蓝色左侧高亮边框 */
 }
 
 .featured-post-item a {
-    color: #ff6f00; /* 暖橙色链接 */
+    color: #03a9f4; /* 天蓝色链接 */
     text-decoration: none;
 }
 
@@ -1053,13 +1053,13 @@ ol li {
 .post-item {
     margin-bottom: 1rem;
     padding: 0.5rem;
-    background-color: #fff3e0; /* 浅橙色背景 */
+    background-color: #e1f5fe; /* 浅蓝色背景 */
     border-radius: 6px;
-    border-left: 4px solid #ffcc80; /* 更浅的橙色左侧高亮边框 */
+    border-left: 4px solid #81d4fa; /* 更浅的蓝色左侧高亮边框 */
 }
 
 .post-item a {
-    color: #ff6f00; /* 暖橙色链接 */
+    color: #03a9f4; /* 天蓝色链接 */
     text-decoration: none;
 }
 
@@ -1069,6 +1069,6 @@ ol li {
 
 .post-date {
     font-size: 0.9rem;
-    color: #ff8a65; /* 浅橙色日期 */
+    color: #4fc3f7; /* 浅蓝色日期 */
     margin-left: 1rem;
 }
