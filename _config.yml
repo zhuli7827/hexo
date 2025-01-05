@@ -59,7 +59,7 @@ pagination_dir: page
 include: null
 exclude: null
 ignore: null
-theme: particlex
+theme: shokaX
 deploy:
   type: git
   repo: https://github.com/zhuli7827/hexo.git
