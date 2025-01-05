@@ -18,15 +18,32 @@
         </span>
     </div>
 </div>
-<div
-    id="home-posts-wrap"
-    ref="homePostsWrap"
-    <%- theme.card.enable || 'class="home-posts-wrap-no-card"' %>
->
-    <div id="home-posts">
-        <%- partial("posts") %>
-        <%- partial("current") %>
+<div id="home-posts-wrap" ref="homePostsWrap" <%- theme.card.enable || 'class="home-posts-wrap-no-card"' %>>
+    <!-- 置顶区域 -->
+    <div class="posts-section">
+        <h2 class="section-title">置顶</h2>
+        <div class="posts-content">
+            <%- partial("posts", { posts: topPosts }) %> <!-- 渲染置顶文章 -->
+        </div>
     </div>
+
+    <!-- 精选区域 -->
+    <div class="posts-section">
+        <h2 class="section-title">精选</h2>
+        <div class="posts-content">
+            <%- partial("posts", { posts: featuredPosts }) %> <!-- 渲染精选文章 -->
+        </div>
+    </div>
+
+    <!-- 文章列表区域 -->
+    <div class="posts-section">
+        <h2 class="section-title">文章列表</h2>
+        <div class="posts-content">
+            <%- partial("posts", { posts: allPosts }) %> <!-- 渲染所有文章 -->
+        </div>
+    </div>
+
+    <!-- 卡片区域（如果启用） -->
     <% if (theme.card.enable) { %>
     <div id="home-card">
         <%- partial("card") %>
