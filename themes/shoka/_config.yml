@@ -1,5 +1,5 @@
 # Alternate site name
-alternate: Yume Shoka
+alternate: Dabing
 
 open_graph:
   #twitter_id:
@@ -8,7 +8,7 @@ open_graph:
   #fb_app_id:
 
 # Assets
-statics: / #//cdn.jsdelivr.net/gh/username/RepositoryName@latest/
+statics: /    #/ #//cdn.jsdelivr.net/gh/username/RepositoryName@latest/
 css: css
 js: js
 images: images
@@ -23,18 +23,22 @@ favicon:
 # Dark Mode
 # By default, the page judges whether to turn on the dark mode according to the device settings or user selection
 # if `true`, the page will be displayed directly as Dark Mode, unless the user makes another choice
+# 夜间模式
 darkmode: false
 
 # By default the page will automatically scroll to the last viewed position
 # if `false`, automatic positioning will be turned off
+# 自动定位 自动定位到上次浏览的位置
 auto_scroll: true
 
 # Whether to show the loading cat
+# 是否显示页面加载动漫 就是每次都看到的那个猫猫
 loader:
   start: true # When entering the page
   switch: true # When switching to another page
 
 # click with Firework
+# 页面特效 单击页面的烟花效果
 fireworks:
   enable: true
   color:
@@ -43,6 +47,7 @@ fireworks:
     # - "rgba(187,222,214,.9)"
     # - "rgba(138,198,209,.9)"
 
+# 加载谷歌字体
 font:
   enable: true
   # Font options:
@@ -57,12 +62,14 @@ font:
     size:
 
   # Font settings for alternate title.
+  # 备用字体
   logo:
     external: true
     family: Fredericka the Great
     size: 3.5
 
   # Font settings for site title.
+  # 站点字体
   title:
     external: true
     family: Noto Serif JP
@@ -88,16 +95,17 @@ font:
 # //at.alicdn.com/t/font_1832207_c8i9n1ulxlt.css => 1832207_c8i9n1ulxlt
 iconfont: "1832207_igi8uaupcus"
 
+# 菜单
 menu:
-  home: / || home
-  # about: /about/ || user
-  # posts:
-  #   default: / || feather
-  #   archives: /archives/ || list-alt
-  #   categories: /categories/ || th
-  #   tags: /tags/ || tags
-  # friends: /friends/ || heart
-  # links: /links/ || magic
+  首页: / || home
+  关于: /about/ || user
+  文章:
+    default: / || feather
+    归档: /archives/ || list-alt
+    分类: /categories/ || th
+    标签: /tags/ || tags
+#  friends: /friends/ || heart
+#  links: /links/ || magic
 
 # Social Links
 # Usage: `Key: permalink || icon || color`
@@ -105,7 +113,7 @@ menu:
 # Value before `||` delimiter is the target permalink,
 # secend value is the name of Font icon.
 social:
-  #github: https://github.com/yourname || github || "#191717"
+  github: https://github.com/dabing85 || github || "#191717"
   #google: https://plus.google.com/yourname || google
   #twitter: https://twitter.com/yourname || twitter || "#00aff0"
   #zhihu: https://www.zhihu.com/people/yourname || zhihu || "#1e88e5"
@@ -122,19 +130,22 @@ social:
 
 sidebar:
   # Sidebar Position.
-  position: left
-  # position: right
+  # position: left
+  position: right
   # Replace the default avatar image and set the url here.
   avatar: avatar.jpg
 
 widgets:
   # if true, will show random posts
+  # 显示随机文章
   random_posts: true
   # if true, will show recent comments
+  # 显示最近评论
   recent_comments: true
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
+  # 页尾全站统计局
   since: 2010
   icon:
     name: sakura rotate
@@ -144,18 +155,20 @@ footer:
   count: false
   powered: true
 
+# 文章界面统计
 post:
   # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
   count: false
 
+# 奖励 这里我不需要
 # Reward (Donate)
-reward:
-  # If true, reward will be displayed in every article by default.
-  enable: true
-  account:
-    wechatpay: /wechatpay.png
-    alipay: /alipay.png
-    paypal: /paypal.png
+#reward:
+#  # If true, reward will be displayed in every article by default.
+#  enable: true
+#  account:
+#    wechatpay: /wechatpay.png
+#    alipay: /alipay.png
+#    paypal: /paypal.png
 
 # TagCloud settings for tags page.
 tagcloud:
@@ -178,19 +191,19 @@ tagcloud:
 # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
 creative_commons:
   license: by-nc-sa
-  language: deed.zh
+  language: zh-CN  # deed.zh
 
 # Comments
 # Valine
 # For more information: https://github.com/amehime/MiniValine
 valine:
-  appId: #Your_appId
-  appKey: #Your_appkey
+  appId: # 配置你的appId
+  appKey: # 配置你的appKey
   placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
   avatar: mp # Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro
   pageSize: 10 # Pagination size
-  lang: en
-  visitor: true # Article reading statistic
+  lang: zh-CN
+  visitor: true # Article reading statistic 文章阅读量统计
   NoRecordIP: false # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   powerMode: true
@@ -213,17 +226,18 @@ valine:
     investor:
       # - hash of investor1@email.com
 
-# bgm
+# bgm 背景音乐
 audio:
-  # - title: 列表1
-  #   list:
-  #    - https://music.163.com/#/playlist?id=2943811283
-  #    - https://music.163.com/#/playlist?id=2297706586
-  # - title: 列表2
-  #   list:
-  #    - https://music.163.com/#/playlist?id=2031842656
+  - title: 列表1
+    list:
+     - https://music.163.com/#/playlist?id=2943811283
+     - https://music.163.com/#/playlist?id=2297706586
+  - title: 列表2
+    list:
+     - https://music.163.com/#/playlist?id=2031842656
 
 # random image api
+# 随机图库
 image_server: # "https://acg.xydwz.cn/api/api.php"
 
 # Algolia Search
@@ -276,6 +290,111 @@ baidu_site_verification:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
 baidu_push: false
+
+# 渲染md文件
+markdown:
+  render: # 渲染器设置
+    html: false # 过滤 HTML 标签
+    xhtmlOut: true # 使用 '/' 来闭合单标签 （比如 <br />）。
+    breaks: true # 转换段落里的 '\n' 到 <br>。
+    linkify: true # 将类似 URL 的文本自动转换为链接。
+    typographer:
+    quotes: '“”‘’'
+  plugins: # markdown-it 插件设置
+    - plugin:
+        name: markdown-it-toc-and-anchor
+        enable: true
+        options: # 文章目录以及锚点应用的 class 名称，shoka 主题必须设置成这样
+          tocClassName: 'toc'
+          anchorClassName: 'anchor'
+    - plugin:
+        name: markdown-it-multimd-table
+        enable: true
+        options:
+          multiline: true
+          rowspan: true
+          headerless: true
+    - plugin:
+        name: ./markdown-it-furigana
+        enable: true
+        options:
+          fallbackParens: "()"
+    - plugin:
+        name: ./markdown-it-spoiler
+        enable: true
+        options:
+          title: "你知道得太多了"
+
+# minify 配置，压缩css/js/html
+minify:
+  html:
+    enable: true
+    exclude: # 排除 hexo-feed 用到的模板文件
+      - '**/json.ejs'
+      - '**/atom.ejs'
+      - '**/rss.ejs'
+  css:
+    enable: true
+    exclude:
+      - '**/*.min.css'
+  js:
+    enable: true
+    mangle:
+      toplevel: true
+    output:
+    compress:
+    exclude:
+      - '**/*.min.js'
+
+# 代码高亮
+highlight:
+  enable: false
+
+prismjs:
+  enable: false
+
+
+
+autoprefixer:
+  exclude:
+    - '*.min.css'
+
+# 全局搜索
+algolia:
+  appId:  #Your appId
+  apiKey:  #Your apiKey
+  adminApiKey:  #Your adminApiKey
+  chunkSize: 5000
+  indexName: "" #"shoka"
+  fields:
+    - title
+    - path
+    - categories
+    - content:strip:truncate,0,2000
+    - gallery
+    - photos
+    - tags
+
+
+keywords: java,git,springcloud #站点关键词，用 “,” 分隔
+
+feed:
+  limit: 20
+  order_by: "-date"
+  tag_dir: false
+  category_dir: false
+  rss:
+    enable: true
+    template: "themes/shoka/layout/_alternate/rss.ejs"
+    output: "rss.xml"
+  atom:
+    enable: true
+    template: "themes/shoka/layout/_alternate/atom.ejs"
+    output: "atom.xml"
+  jsonFeed:
+    enable: true
+    template: "themes/shoka/layout/_alternate/json.ejs"
+    output: "feed.json"
 
 
 #! ---------------------------------------------------------------
