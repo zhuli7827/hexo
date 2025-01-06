@@ -13,6 +13,11 @@ css: css
 js: js
 images: images
 
+background:
+  default: /images/11.jpeg
+  options:
+ 
+
 # themes/shoka/source/images/***
 favicon:
   apple_touch_icon: /apple-touch-icon.png
