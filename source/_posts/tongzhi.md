@@ -33,3 +33,5 @@ description: 获奖通知
 
 信息技术与应用协会
 2025/01/04
+
+![这是图片](/imgages/11.jpeg "Magic Gardens")
