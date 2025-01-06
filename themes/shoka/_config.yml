@@ -127,13 +127,13 @@ social:
   #instagram: https://instagram.com/yourname || instagram
   #skype: skype:yourname?call|chat || skype
   #douban: https://www.douban.com/people/yourname/ || douban
-
+  #axios: 
 sidebar:
   # Sidebar Position.
   # position: left
   position: right
   # Replace the default avatar image and set the url here.
-  avatar: /avatar.jpg
+  avatar: /source/_data/avatar.jpg
 
 widgets:
   # if true, will show random posts
