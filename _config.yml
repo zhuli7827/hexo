@@ -68,4 +68,4 @@ theme: shoka
 deploy:
   type: git
   repo: https://github.com/zhuli7827/hexo.git
-  branch: main
+  branch: gh-pages
