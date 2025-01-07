@@ -396,15 +396,7 @@ feed:
     template: "themes/shoka/layout/_alternate/json.ejs"
     output: "feed.json"
 
-  # 本文作者： Ruri Shimotsuki @有夢書架
-# 本文链接： https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/display/
-# 版权声明： 本站所有文章除特别声明外，均采用 (CC)BY-NC-SA 许可协议。转载请注明出处！
 
-category_map:
-  计算机科学: computer-science
-  Java: java
-  C++: cpp
-  二进制杂谈: note
 #! ---------------------------------------------------------------
 #! DO NOT EDIT THE FOLLOWING `vendors` SETTINGS
 #! UNLESS YOU KNOW WHAT YOU ARE DOING
