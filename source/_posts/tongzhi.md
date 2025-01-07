@@ -2,7 +2,7 @@
 title: 蓝桥杯校赛获奖通知
 date: 2025-01-04 06:44:43
 tags:
-sticky: 100
+featured: true
 ---
 亲爱的同学们：
 
